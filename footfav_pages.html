@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina de mensajes de foot favorite</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+<link rel="stylesheet" href="footfav_pages.css">
+<body>
+    <div class="container">
+        <button id="logout" onclick="logout();" class="glyphicon glyphicon-log-out btn btn-danger">Salir</button>
+        <center>
+            <h1 class="header">
+                foot favorite
+                <sup>
+                    <img src="https://i.pinimg.com/originals/9c/b7/6e/9cb76e9c7d4e820239cabae27b7a2c9e.png">
+                </sup>
+            </h1>
+            <div id="output" style="text-align: left;margin-bottom: 70px;"> </div>
+        </center>
+    </div>
+    
+    
+    <center>
+        <div class="input_div_message_page">
+            <label>Enviar:</label>
+            <input type="text" id="msg" class="form-control" placeholder="Mensaje">
+            <button onclick="send();" class="btn btn-success">Enviar</button>
+        </div>
+    </center>
+    
+    
+    <script src="footfav_pages.js"></script> 
+</body>
+</html>
